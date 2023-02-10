@@ -2,7 +2,6 @@
 
 #include <string>
 #include <cctype>
-#include <iostream>
 
 namespace CP {
 

@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 
+#include "caesar_analyzer.h"
 #include "caesar_cipher.h"
 
 int main() {
@@ -13,5 +14,10 @@ int main() {
               << expect << "\" : "
               << std::boolalpha
               << res << std::endl;
+
+    auto x = CP::CaesarAnalyzer("khoor, zruog");
+    x.brute_force();
+    x.count_alphabet();
+    x.count_words();
 }
 
